@@ -1,15 +1,5 @@
 import "../scss/main.scss";
-
-
-
-
-
-
-
-
-
-
-
+import "./hover";
 
 
 console.log("main.js running");
