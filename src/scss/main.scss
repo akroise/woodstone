@@ -72,9 +72,6 @@ a {
     }
     &:hover {
         color: rgb(0, 0, 0);
-        &::before {
-            background: $color2;
-        }
     }
 }
 
@@ -94,11 +91,7 @@ a {
 
 button,
 .button {
-    padding: 0.7rem 1.65rem;
-    background: $color3;
-    border-radius: 4px;
     cursor: pointer;
-    border: 14;
 }
 
 //visibility
