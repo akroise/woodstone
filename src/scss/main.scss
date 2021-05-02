@@ -24,6 +24,10 @@ $font-sm:0.8rem;
     //outline: 1px solid red;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: $color6;
     margin: 0;
