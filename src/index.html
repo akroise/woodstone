@@ -392,8 +392,8 @@
           <!-- <p class="dim ">Message us</p> -->
           <div class="textbox " style=" margin-bottom: 170px; ">
             <label>Your message Here!</label>
-<br>        <textarea id='comment' placeholder="Remember, be nice! " rows="4 "  maxlength='100' class='textarea'></textarea>
-<br>  <button id="sendEmail " >Send
+<br>        <textarea id='comment' placeholder="Remember, be nice! " rows="4 "  maxlength='100' class='textarea' name= 'message'></textarea>
+<br>  <button id="sendEmail " onclick="share()">Send</button>
             </div>
         </section>
     </main>
@@ -475,5 +475,21 @@ Address</p><code>c-1/1-A, L-Type Shop Ground Floor,<br> Rama Park, Uttam Nagar, 
     <code><p> @copyright vsvai </p></code>
     
     </body>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
+        </script>
+          
+        <script type="text/javascript">
+              
+            function share() {
+      
+                var message = document. getElementById("comment"). value;;
+    
+                window.open(
+                    "https://api.whatsapp.com/send?phone=919318483909&text=" + message,
+                    '_blank' 
+                );
+            }
+        </script>
 
 </html>
