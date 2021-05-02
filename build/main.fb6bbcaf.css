@@ -278,7 +278,6 @@
 .section3 {
   max-height: 700px;
   height: 100%;
-  background: linear-gradient(to right, #5e5840 50%, #e8e9e8 50%);
   padding: 0px;
 }
 .section3__data {
@@ -297,8 +296,8 @@
   max-height: 700px;
   max-width: 1080px;
   width: 100%;
-  height: 12rem;
-  background-color: linear-gradient(to right, white, #723914 50%);
+  height: 14rem;
+  background-color: white;
   padding: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -306,18 +305,54 @@
   margin-right: auto;
 }
 .contacts__left {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   color: #e8e9e8;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .contacts__left:hover {
   text-decoration: none !important;
   background-color: black;
 }
+.contacts__left .contactlogo {
+  background-position: center;
+  margin-left: 0rem;
+  padding: 0.1rem;
+}
 .contacts__left .dim {
-  margin-left: -2rem;
+  margin: 0rem;
+  margin-top: -0.8rem;
   color: white;
-  font-size: 1.5em;
   padding-top: 1rem;
+}
+.contacts__left .callcard {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.3rem;
+  background-position: center;
+  position: static;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 0;
+  margin-left: 1.5rem;
+  width: 100%;
+  margin-top: -2rem;
+  background-color: #191825;
+}
+@media (min-width: 45em) {
+  .contacts__left .callcard {
+    padding-left: 1rem;
+    display: flex;
+    width: 22rem;
+  }
+}
+.contacts__left .grid {
+  margin-top: 0.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .contacts__left .call {
   display: grid;
@@ -331,13 +366,63 @@
   font-size: 0.8em;
 }
 .contacts__right {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   color: #e8e9e8;
   width: 100%;
-  background-color: #e8e9e8;
+  display: flex;
   justify-content: center;
-  margin: auto;
 }
-.contacts__right .textbox {
+.contacts__right:hover {
+  text-decoration: none !important;
+  background-color: black;
+}
+.contacts__right .contactlogo {
+  background-position: center;
+  margin-left: 0rem;
+  padding: 0.1rem;
+}
+.contacts__right .dim {
+  margin: 0rem;
+  margin-top: -0.8rem;
+  color: white;
+  padding-top: 1rem;
+}
+.contacts__right .callcard {
+  border-radius: 0.3rem;
+  background-position: center;
+  position: static;
+  padding-right: 0;
+  width: 100%;
+  margin-top: -2rem;
+  background-color: #191825;
+}
+.contacts__right .address {
+  color: #e8e9e8;
+  border-radius: 0.3rem;
+  position: static;
+  padding: 1rem;
+  width: 15rem;
+  margin: 1.5rem;
+  margin-top: -2rem;
+  background-color: #191825;
+}
+.contacts__right .address p,
+.contacts__right .address code {
+  color: #e8e9e8;
+}
+.contacts__right .call {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 0.5rem;
+}
+.contacts__right .number {
+  text-decoration: none !important;
+  color: white;
+  font-size: 0.8em;
+}
+.contacts__wa .textbox {
   box-sizing: border-box;
   position: relative;
   background-color: white;
@@ -349,12 +434,12 @@
   padding-top: 0.2rem;
   padding-left: 0.5rem;
   width: 17rem;
-  margin: auto;
+  margin: 2rem;
   padding-bottom: 1rem;
   font-size: 0.7em;
 }
 @media (max-width: 40em) {
-  .contacts__right .textbox {
+  .contacts__wa .textbox {
     padding-left: 1rem;
     width: 14rem;
   }
@@ -370,7 +455,7 @@
     transform: scale(1);
   }
 }
-.contacts__right .textbox button {
+.contacts__wa .textbox button {
   text-decoration: underline;
   margin-top: 0.1rem;
   background-color: #4dbecf;
@@ -388,11 +473,11 @@
   transition: all 0.3s ease;
 }
 @media (max-width: 40em) {
-  .contacts__right .textbox button {
+  .contacts__wa .textbox button {
     margin-left: 5rem;
   }
 }
-.contacts__right .textarea {
+.contacts__wa .textarea {
   text-decoration: underline;
   resize: none;
   outline: none;
@@ -403,22 +488,22 @@
   padding-left: 1rem;
 }
 @media (max-width: 40em) {
-  .contacts__right .textarea {
+  .contacts__wa .textarea {
     padding-left: 1rem;
   }
 }
-.contacts__right .dim {
+.contacts__wa .dim {
   color: #5e5840;
   margin-right: auto;
   padding-top: 0.1rem;
   font-size: 1.8rem;
 }
 @media (max-width: 40em) {
-  .contacts__right .dim {
+  .contacts__wa .dim {
     padding-left: 1rem;
   }
 }
-.contacts__right .dim button {
+.contacts__wa .dim button {
   width: 4rem;
   height: 1.5rem;
   background-color: #5e5840;
@@ -1766,4 +1851,4 @@ code {
   color: black;
 }
 
-/*# sourceMappingURL=/main.77bb5cfd.css.map */
+/*# sourceMappingURL=/main.fb6bbcaf.css.map */
