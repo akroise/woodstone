@@ -27,6 +27,7 @@
         "sass": "^1.32.8"
     },
     "dependencies": {
+        "htmlnano": "^0.2.8",
         "json5": "^2.2.0"
     }
 }
