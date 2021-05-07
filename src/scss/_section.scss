@@ -2,23 +2,28 @@
     background-color: $color1;
     //height: auto;
     width: 100%;
-    max-height: 1000px;
     margin: 0;
     padding: 0;
     &__data {
         margin: 0;
         padding: 0;
         color: $color1;
-        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 850px;
         width: 100%;
-        margin: auto;
-        padding: 0;
         .dim {
             font-size: large;
-            max-width: 400px;
+            max-width: 1080px;
             color: black;
-            padding: 0.01rem;
             margin-top: 0;
+            padding-left: 3rem;
+            @include breakpoint-down(medium) {
+                padding-left: 3rem;
+            }
+            @include breakpoint-down(small) {
+                padding-left: 0.9rem;
+            }
         }
     }
 }
@@ -77,17 +82,19 @@
 .contacts {
     max-height: 700px;
     max-width: 1080px;
-    margin-right: 2rem;
     width: 100%;
-    padding-top: 2rem;
     height: 21.5rem;
     background-color: $color2;
     //background-color: linear-gradient( to right, rgb(255, 255, 255), rgb(114, 57, 20) 50%);
-    padding: 0px;
+    padding-right: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
+    @include breakpoint-down(medium) {
+        margin-left: auto;
+        margin-right: auto;
+    }
     @include breakpoint-down(small) {
         margin: 0;
         background-color: $color2;
@@ -104,6 +111,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        padding-left: 3rem;
         align-items: center;
         &:hover {
             text-decoration: none !important;
@@ -150,7 +158,7 @@
             @include breakpoint-up(medium) {
                 padding-left: 1rem;
                 display: flex;
-                width: 100%;
+                width: 22rem;
             }
         }
         .grid {
@@ -230,16 +238,20 @@
         }
     }
     &__wa {
-        margin: 1rem;
         padding: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         max-width: 1080px;
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid-template-columns: 4fr 2fr;
-        grid-gap: auto;
+        grid-template-columns: 2fr 1fr;
         justify-content: center;
         align-content: center;
+        @include breakpoint-down(medium) {
+            padding: 0rem;
+            margin: 0;
+        }
         @include breakpoint-down(small) {
             margin: 1rem;
             padding-top: 8rem;
@@ -256,8 +268,9 @@
             padding-top: 0.5rem;
             padding-left: 0.7rem;
             width: 20rem;
-            height: 15rem;
+            height: 14rem;
             margin-top: 2rem;
+            margin-left: 2rem;
             padding-bottom: 1rem;
             @include breakpoint-down(small) {
                 padding-left: 1rem;
