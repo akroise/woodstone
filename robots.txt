@@ -20,8 +20,4 @@ User-agent: AdsBot-Google
 User-agent: Twitterbot
 User-agent: Adidxbot
 Allow: /
-
-User-agent: Yahoo Pipes 1.0
-User-agent: Facebot
-User-agent: externalfacebookhit
-Disallow: /
+Host: www.woodstonebuilders.in
