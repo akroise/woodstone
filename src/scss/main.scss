@@ -21,7 +21,7 @@ $font-sm:0.8rem;
 * {
     box-sizing: border-box;
     position: relative;
-    //outline: 1px solid red;
+    outline: 1px solid red;
 }
 
 html {
@@ -32,7 +32,6 @@ body {
     background-color: $color6;
     margin: 0;
     padding: 0;
-    width: 100%;
     height: auto;
     display: grid;
     font-family: 'Poppins', sans-serif;
@@ -129,7 +128,7 @@ button,
     @include breakpoint-down(small) {
         padding-top: 30px;
         width: 80%;
-        margin: auto;
+        margin: 0;
     }
     @include breakpoint-up(medium) {
         text-align: top;
