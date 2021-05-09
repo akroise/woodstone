@@ -20,4 +20,3 @@ User-agent: AdsBot-Google
 User-agent: Twitterbot
 User-agent: Adidxbot
 Allow: /
-Host: www.woodstonebuilders.in
