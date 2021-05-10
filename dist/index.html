@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" "="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WoodStone</title>
     <link rel="shortcut icon " href="/logo.510bec84.png">
     <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
@@ -13,6 +13,18 @@
 <link rel="stylesheet" href="/main.fb6bbcaf.css"></head>
 
 <body>
+    <div class="welcome" id="welcomepage">
+        <div class="welcontent" id="popup">
+            <div class="containerwelcome">
+                <span class="text1">Welcome to</span>
+                <span class="text2"><u>WoodStone Builders</u></span>
+            </div>
+        </div>
+    </div>
+    <script>setTimeout(function () {
+  $("#welcomepage").delay(4000).fadeOut(300);
+}, 1000);</script>
+
     <section class="section1 ">
         <header class="header ">
             <nav id="navbar " class="flex flex-jc-sb ">
@@ -49,6 +61,7 @@
                 <h4> <a href=" "> Sales-Purchase </a></h4>
                 <h4> <a href=" "> Collaboration </a> </h4>
                 <h4> <a href=" "> Renting </a> </h4>
+
             </div>
 
         </div>
@@ -96,6 +109,59 @@
                 </div>
 
             </div>
+        </section>
+
+        <section class="addslider">
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio buttons start --------->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- radio buttons end --------->
+                    <!-- slide images start --------->
+                    <div class="slide first">
+                        <img src="/1.9c424c59.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/2.8c9da2f7.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/3.1ed57c65.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/4.1582836e.jpg" alt="">
+                    </div>
+                    <!-- slide images end --------->
+                    <!---automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!---automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+                <script>var counter = 1;
+setInterval(function () {
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);</script>
+            </div>
+
         </section>
         <!-- <p>We Deals in all kinds of Properties with Loan facilities</p> -->
         <section class="section1 ">
@@ -429,7 +495,7 @@
     <br>
     <footer>
         <div class="address ">
-Address<p></p><code>c-1/1-A, L-Type Shop Ground Floor,<br> Rama Park, Uttam Nagar, New Delhi,<br> Delhi 110059</code>            <p></p></div>
+<p>Address</p><p></p><code>c-1/1-A, L-Type Shop Ground Floor,<br> Rama Park, Uttam Nagar, New Delhi,<br> Delhi 110059</code>            <p></p></div>
         <div class="contact ">
             <p style="padding-right:2.2rem; ">contact</p>
             <div class="hide-for-mobile ">
@@ -458,8 +524,8 @@ Address<p></p><code>c-1/1-A, L-Type Shop Ground Floor,<br> Rama Park, Uttam Naga
         <a></a>
         <div class="navigation ">
             <p>navs</p>
-            <a><code>Home</code></a>
-            <a><code>Projects</code></a>
+            <a href="#gothere"><code>Home</code></a>
+            <a href="#gothere"><code>Projects</code></a>
             <a href="https://maps.google.com/maps?ll=28.619881,77.034575&z=17&t=m&hl=en&gl=IN&mapclient=embed&cid=15642107340278994021 target=_blank "><code>Map</code></a>
             <a href="https://wa.me/c/918810696927 " target="_blank "><code>WhatsApp</code></a>
             <a href="https://g.page/woodstone-builders-dwarka?share " target="_blank "><code>Gpage</code></a></div>

@@ -12,6 +12,8 @@ $font-sm:0.8rem;
 @import "./header";
 @import "./feature";
 @import "./section";
+@import "./slider";
+@import "./welcome";
 @import "./variables/main.scss";
 @import "./mixins/main.scss";
 @import "./grid";
@@ -51,10 +53,10 @@ i {
     height: 100%;
 }
 
-span {
+/*span {
     background: $color1 !important;
     color: $color2;
-}
+}*/
 
 a {
     position: relative;

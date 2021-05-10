@@ -23,6 +23,8 @@
         "@babel/plugin-proposal-class-properties": "^7.13.0",
         "material-ui-with-sass": "^0.1.17",
         "parcel-bundler": "^1.12.5",
+        "posthtml-modules": "^0.7.4",
+        "posthtml-shorten": "^1.0.0",
         "sass": "^1.32.8"
     }
 }
