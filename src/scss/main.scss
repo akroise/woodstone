@@ -55,29 +55,6 @@ span {
     color: $color2;
 }
 
-a {
-    position: relative;
-    text-decoration: none;
-    font-size: $font-med +0.2rem;
-    color: $color2;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 0.15em;
-        left: 0;
-        right: 0;
-        bottom: -5px;
-        color: $color2;
-    }
-    &:hover {
-        color: rgb(0, 0, 0);
-    }
-}
-
 //flexbox
 .flex {
     display: flex;
@@ -113,20 +90,18 @@ button,
 //text
 .banner {
     font-family: 'Shadows Into Light', cursive;
-    margin: auto;
-    justify-content: center;
     text-align: bottom;
-    font-size: 50px;
-    padding-top: 0.01em;
+    padding-top: 0em;
     justify-content: center;
-    width: 100% auto;
+    width: 100%;
+    max-width: 40rem;
     @include breakpoint-down(medium) {
-        padding: -20px;
+        padding-top: -20px;
         width: 80%;
         margin: auto;
     }
     @include breakpoint-down(small) {
-        padding-top: 30px;
+        padding-top: 20px;
         width: 80%;
         margin: 0;
     }
