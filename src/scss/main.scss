@@ -15,7 +15,8 @@ $font-sm:0.8rem;
 @import "./variables/main.scss";
 @import "./mixins/main.scss";
 @import "./grid";
-@import "./visibility"; // Visibility last for precedence
+@import "./visibility";
+@import "./mobilenav"; // Visibility last for precedence
 //using material-UI
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
@@ -26,6 +27,23 @@ $font-sm:0.8rem;
 
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: auto;
+    &::-webkit-scrollbar {
+        display: block;
+        height: 2px;
+        width: 10px;
+        color: $color1;
+        background-color: $color1;
+        @include breakpoint-down(small) {
+            display: none;
+        }
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 2rem;
+        max-height: 1rem;
+        background: $color5;
+        border-radius: 2px;
+    }
 }
 
 body {

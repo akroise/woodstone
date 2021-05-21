@@ -1,0 +1,172 @@
+.menu {
+    position: fixed;
+    margin: 0.1rem;
+    bottom: -1rem;
+    box-sizing: border-box;
+    font-size: 20px;
+    left: 95%;
+    top: 80%;
+}
+
+.whatsapp {
+    background: #0b8dc900;
+    justify-content: left;
+    align-items: center;
+    text-align: right;
+    border-radius: 100%;
+    width: 3em;
+    height: 3em;
+    margin-left: -3.5em;
+    bottom: 2.5em;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform ease-out 200ms;
+    transition: -webkit-transform ease-out 200ms;
+    transition: transform ease-out 200ms;
+    transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+    img {
+        width: 4.5rem;
+    }
+    &_content {
+        display: block;
+    }
+    &__wa {
+        position: fixed;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        transition: 0.11s;
+        margin: 0rem;
+        padding: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: 18rem;
+        right: 3rem;
+        bottom: 7rem;
+        @include breakpoint-down(medium) {
+            margin: 1rem;
+            padding: 0rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            height: 18rem;
+            right: 3rem;
+            bottom: 6rem;
+        }
+        @include breakpoint-down(small) {
+            margin: 1rem;
+            padding: 0rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            height: 18rem;
+            right: 1rem;
+            bottom: 5.5rem;
+        }
+        .textbox {
+            filter: drop-shadow(10px 5px 10px rgba(0, 0, 0, 0.7));
+            padding: 1rem;
+            display: fixed;
+            border-radius: 2px;
+            box-sizing: border-box;
+            position: relative;
+            background-color: $color3;
+            justify-content: center;
+            flex: auto;
+            color: $color5;
+            padding-top: 0.5rem;
+            padding-left: 0.7rem;
+            width: 90%;
+            height: 90%;
+            margin-top: 2rem;
+            margin-left: 2rem;
+            padding-left: 1rem;
+            width: 20rem;
+            height: 16rem;
+            font-size: 0.8em;
+            @keyframes short-press {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(.9);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            button {
+                position: absolute;
+                bottom: 1px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-left: 15.8rem;
+                margin-top: -3.54rem;
+                z-index: 8;
+                transition: .3s;
+                border: none;
+                outline: none;
+                margin-bottom: 0.8rem;
+                cursor: pointer;
+                animation: .6s 0.0s both;
+                background-color: rgba(72, 212, 29, 0);
+                /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+                svg {
+                    color: #9c9898;
+                    width: 2.8rem;
+                    height: 3rem;
+                    padding: 0.5rem;
+                }
+            }
+            .textarea {
+                display: block;
+                resize: vertical;
+                overflow: hidden;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                position: absolute;
+                bottom: 1px;
+                outline: none;
+                color: $color6;
+                border: 0;
+                padding: 0.6em;
+                box-shadow: 2px 2px 6px #888888;
+                margin-bottom: 1.0rem;
+                width: 80%;
+                font-size: 1rem;
+                height: 100% 3rem;
+                max-height: 7rem;
+                padding-left: 1rem;
+                border-radius: 1.5rem;
+                background-color: rgb(177, 165, 165);
+            }
+        }
+        .qr {
+            width: 10rem;
+            @include breakpoint-up(medium) {
+                width: 250px;
+                height: 100%;
+            }
+        }
+        .dim {
+            color: $color5;
+            margin-right: auto;
+            padding-top: 0.1rem;
+            @include breakpoint-down(small) {
+                padding-left: 1rem;
+            }
+            font-size: 1.8rem;
+            button {
+                width: 4rem;
+                height: 1.5rem;
+                background-color: $color5;
+                color: $color3;
+            }
+        }
+    }
+}
