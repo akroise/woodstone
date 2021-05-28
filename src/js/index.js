@@ -1,8 +1,16 @@
-import React from "react";
-import ReactDom from "react-dom";
+import '../scss/main.scss';
 
-const App = () =>
-    <
-    h1 className = "address" > Hello! < /h1>;
+import React from 'react';
+import ReactDom from 'react-dom';
 
-ReactDom.render( < App / > , document.getElementById("app"));
+const App = () => {
+  return (
+    <div className="address ">
+      <code className="contact ">
+        <p>Hello! </p>
+      </code>
+    </div>
+  );
+};
+
+ReactDom.render(<App />, document.getElementById('app'));

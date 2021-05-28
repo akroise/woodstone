@@ -1,691 +1,692 @@
 .section1 {
-    width: auto;
-    @include breakpoint-down(small) {
-        width: 100vw;
+  width: auto;
+  @include breakpoint-down(small) {
+    width: 100vw;
+  }
+  background-color: $color1;
+  //height: auto;
+  margin: 0;
+  padding: 0;
+  &__data {
+    color: $color1;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    width: 100%;
+    .head {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: row;
+      a {
+        text-decoration: none;
+        color: $color2;
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        @include breakpoint-down(small) {
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          font-size: 1rem;
+        }
+        margin: 0rem;
+        cursor: pointer;
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 0em;
+          left: 0;
+          right: 0;
+          bottom: 0px;
+          color: $color2;
+        }
+        &:hover {
+          &::before {
+            background-color: white;
+          }
+        }
+      }
     }
-    background-color: $color1;
-    //height: auto;
-    margin: 0;
-    padding: 0;
-    &__data {
-        color: $color1;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 850px;
+    .dim {
+      font-size: large;
+      max-width: 1080px;
+      color: black;
+      margin-top: 0;
+      padding-left: 3rem;
+      @include breakpoint-down(medium) {
+        padding-left: 3rem;
+      }
+      @include breakpoint-down(small) {
+        padding-left: 1rem;
         width: 100%;
-        .head {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            flex-direction: row;
-            a {
-                text-decoration: none;
-                color: $color2;
-                font-size: 1.2rem;
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-                @include breakpoint-down(small) {
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    font-size: 1.0rem;
-                }
-                margin: 0rem;
-                cursor: pointer;
-                &::before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    height: 0em;
-                    left: 0;
-                    right: 0;
-                    bottom: 0px;
-                    color: $color2;
-                }
-                &:hover {
-                    &::before {
-                        background-color: white;
-                    }
-                }
-            }
-        }
-        .dim {
-            font-size: large;
-            max-width: 1080px;
-            color: black;
-            margin-top: 0;
-            padding-left: 3rem;
-            @include breakpoint-down(medium) {
-                padding-left: 3rem;
-            }
-            @include breakpoint-down(small) {
-                padding-left: 1rem;
-                width: 100%;
-            }
-        }
+      }
     }
+  }
 }
 
 .section2 {
-    width: auto;
-    @include breakpoint-down(small) {
-        width: 100vw;
-    }
-    max-height: 700px;
+  width: auto;
+  @include breakpoint-down(small) {
+    width: 100vw;
+  }
+  max-height: 700px;
+  height: 100%;
+  background-color: $color5;
+  padding: 0px;
+  &__data {
+    color: $color1;
     height: 100%;
-    background-color: $color5;
-    padding: 0px;
-    &__data {
-        color: $color1;
-        height: 100%;
-        max-width: 900px;
-        .dim {
-            color: white;
-            padding: 1.6em;
-            font-size: 1.1em;
-        }
-        margin: auto;
+    max-width: 900px;
+    .dim {
+      color: white;
+      padding: 1.6em;
+      font-size: 1.1em;
     }
-    .visiting-card {
-        color: black;
-        width: 50%;
-        position: absolute;
-        &::before {
-            content: "";
-            display: none;
-        }
-        &:hover {
-            display: block;
-            &::before {
-                background-color: white;
-            }
-        }
+    margin: auto;
+  }
+  .visiting-card {
+    color: black;
+    width: 50%;
+    position: absolute;
+    &::before {
+      content: '';
+      display: none;
     }
+    &:hover {
+      display: block;
+      &::before {
+        background-color: white;
+      }
+    }
+  }
 }
 
 .section3 {
-    max-width: 1920px;
-    background-color: $color1;
-    width: auto;
-    @include breakpoint-down(small) {
-        width: 100vw;
-    }
-    max-height: 700px;
+  max-width: 1920px;
+  background-color: $color1;
+  width: auto;
+  @include breakpoint-down(small) {
+    width: 100vw;
+  }
+  max-height: 700px;
+  height: 100%;
+  //background: linear-gradient(to right, $color5 50%, $color1 50%);
+  padding: 0px;
+  &__data {
+    color: $color1;
     height: 100%;
-    //background: linear-gradient(to right, $color5 50%, $color1 50%);
-    padding: 0px;
-    &__data {
-        color: $color1;
-        height: 100%;
-        max-width: 900px;
-        .dim {
-            color: white;
-            padding: 1.6em;
-            font-size: 1.1em;
-        }
-        margin: auto;
+    max-width: 900px;
+    .dim {
+      color: white;
+      padding: 1.6em;
+      font-size: 1.1em;
     }
+    margin: auto;
+  }
 }
 
 .contacts {
-    margin-top: 3rem;
-    padding-top: 3rem;
-    width: auto;
-    @include breakpoint-down(small) {
-        width: 100vw;
-    }
-    max-height: 700px;
-    max-width: 1080px;
-    height: 21.5rem;
-    background-color: $color3;
-    //background-color: linear-gradient( to right, rgb(255, 255, 255), rgb(114, 57, 20) 50%);
-    padding-right: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  width: auto;
+  @include breakpoint-down(small) {
+    width: 100vw;
+  }
+  max-height: 700px;
+  max-width: 1080px;
+  height: 21.5rem;
+  background-color: $color3;
+  //background-color: linear-gradient( to right, rgb(255, 255, 255), rgb(114, 57, 20) 50%);
+  padding-right: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint-down(medium) {
     margin-left: auto;
     margin-right: auto;
-    @include breakpoint-down(medium) {
-        margin-left: auto;
-        margin-right: auto;
-        height: 25.5rem;
+    height: 25.5rem;
+  }
+  @include breakpoint-down(small) {
+    margin: 0;
+    background-color: $color2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0rem;
+    justify-content: center;
+  }
+  &__left {
+    margin-top: 0.01rem;
+    margin-left: -1.7rem;
+    color: $color2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 3rem;
+    align-items: center;
+    &:hover {
+      text-decoration: none !important;
     }
-    @include breakpoint-down(small) {
-        margin: 0;
-        background-color: $color2;
-        height: 100%;
+    .contactlogo {
+      background-position: center;
+      margin-left: -2rem;
+      margin-top: 1rem;
+      padding-top: 0.6rem;
+      padding-left: 1.5rem;
+      padding-bottom: 0rem;
+      margin-bottom: -2rem;
+    }
+    .dim {
+      margin: 0rem;
+      margin-top: -0.8rem;
+      color: rgb(255, 255, 255);
+      padding-top: 1rem;
+      padding-right: 0.2rem;
+    }
+    .callcard {
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0.3rem;
+      background-position: center;
+      position: static;
+      padding: 1rem;
+      padding-left: 1rem;
+      padding-right: 0;
+      margin-left: 1.5rem;
+      width: 100%;
+      margin-top: -2rem;
+      background-color: $color6;
+      @include breakpoint-down(small) {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         padding-left: 0rem;
-        justify-content: center;
-    }
-    &__left {
-        margin-top: 0.01rem;
-        margin-left: -1.7rem;
-        color: $color2;
-        width: 100%;
+        padding-right: 0;
+        width: 20rem;
+        font-size: 2.5rem;
+        margin-bottom: 0.3rem;
+      }
+      @include breakpoint-up(medium) {
+        display: grid;
+        padding-left: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        display: flex;
+        width: 25rem;
+      }
+      @include breakpoint-down(medium) {
         display: flex;
         justify-content: center;
-        padding-left: 3rem;
-        align-items: center;
-        &:hover {
-            text-decoration: none !important;
-        }
-        .contactlogo {
-            background-position: center;
-            margin-left: -2rem;
-            margin-top: 1rem;
-            padding-top: 0.6rem;
-            padding-left: 1.5rem;
-            padding-bottom: 0rem;
-            margin-bottom: -2rem;
-        }
-        .dim {
-            margin: 0rem;
-            margin-top: -0.8rem;
-            color: rgb(255, 255, 255);
-            padding-top: 1rem;
-            padding-right: 0.2rem;
-        }
-        .callcard {
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 0.3rem;
-            background-position: center;
-            position: static;
-            padding: 1rem;
-            padding-left: 1rem;
-            padding-right: 0;
-            margin-left: 1.5rem;
-            width: 100%;
-            margin-top: -2rem;
-            background-color: $color6;
-            @include breakpoint-down(small) {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                padding-left: 0rem;
-                padding-right: 0;
-                width: 20rem;
-                font-size: 2.5rem;
-                margin-bottom: 0.3rem;
-            }
-            @include breakpoint-up(medium) {
-                display: grid;
-                padding-left: 1rem;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 1rem;
-                display: flex;
-                width: 25rem;
-            }
-            @include breakpoint-down(medium) {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                padding-left: 0rem;
-                padding-right: 0;
-                width: 20rem;
-                font-size: 2rem;
-                background-color: $color4;
-            }
-        }
-        .grid {
-            margin-top: 0.3rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .call {
-            display: grid;
-            color: rgb(255, 255, 255);
-            font-size: 0.9em;
-            margin: 5px;
-            @include breakpoint-up(medium) {
-                font-size: 1.1em;
-            }
-            @include breakpoint-down(medium) {
-                font-size: 0.7em;
-            }
-        }
-        .number {
-            text-decoration: none !important;
-            color: rgb(255, 255, 255);
-            font-size: 0.8em;
-            @include breakpoint-up(medium) {
-                font-size: 0.9em;
-            }
-            @include breakpoint-down(medium) {
-                font-size: 0.9em;
-            }
-            a {
-                padding-left: 4rem;
-            }
-        }
+        flex-direction: column;
+        padding-left: 0rem;
+        padding-right: 0;
+        width: 20rem;
+        font-size: 2rem;
+        background-color: $color4;
+      }
     }
-    &__right {
-        padding: 0;
+    .grid {
+      margin-top: 0.3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .call {
+      display: grid;
+      color: rgb(255, 255, 255);
+      font-size: 0.9em;
+      margin: 5px;
+      @include breakpoint-up(medium) {
+        font-size: 1.1em;
+      }
+      @include breakpoint-down(medium) {
+        font-size: 0.7em;
+      }
+    }
+    .number {
+      text-decoration: none !important;
+      color: rgb(255, 255, 255);
+      font-size: 0.8em;
+      @include breakpoint-up(medium) {
+        font-size: 0.9em;
+      }
+      @include breakpoint-down(medium) {
+        font-size: 0.9em;
+      }
+      a {
+        padding-left: 4rem;
+      }
+    }
+  }
+  &__right {
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    align-items: center;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    .picture {
+      @include breakpoint-down(medium) {
+        margin: 0rem;
+        margin-top: 8rem;
+        padding-left: 1rem;
+        width: 17rem;
+      }
+      @include breakpoint-down(small) {
+        margin: 1rem;
         margin-top: 1rem;
-        margin-left: -1rem;
-        align-items: center;
-        height: 20rem;
-        display: flex;
-        justify-content: center;
-        .picture {
-            @include breakpoint-down(medium) {
-                margin: 0rem;
-                margin-top: 8rem;
-                padding-left: 1rem;
-                width: 17rem;
-            }
-            @include breakpoint-down(small) {
-                margin: 1rem;
-                margin-top: 1rem;
-                padding-left: 2rem;
-                width: 20rem;
-            }
-        }
+        padding-left: 2rem;
+        width: 20rem;
+      }
     }
+  }
 }
 
 .visiting-card {
-    color: black;
-    width: 60%;
-    position: absolute;
+  color: black;
+  width: 60%;
+  position: absolute;
+  &::before {
+    content: '';
+    display: none;
+  }
+  &:hover {
+    display: block;
     &::before {
-        content: "";
-        display: none;
+      background-color: white;
     }
-    &:hover {
-        display: block;
-        &::before {
-            background-color: white;
-        }
-    }
+  }
 }
 
 .wa {
-    background-color: #00bfa5;
-    padding: 1rem;
-    max-width: 1920px;
-    width: 100%;
-    &__content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1080px;
-        display: grid;
-        grid-template-columns: 1fr 0.5fr;
-        justify-content: center;
-        align-content: center;
-        @include breakpoint-down(medium) {
-            margin: 1rem;
-            padding: 0rem;
-            margin-left: 0rem;
-            margin-right: 0rem;
-            height: 18rem;
-        }
-        @include breakpoint-down(small) {
-            margin: 2rem;
-            display: block;
-            padding: auto;
-            margin-left: auto;
-            margin-right: auto;
-            height: 20rem;
-        }
-        .qr {
-            position: static;
-            margin: 0;
-            max-width: 20rem;
-            min-width: 20rem;
-            width: 100%;
-            height: 100%;
-        }
+  background-color: #00bfa5;
+  padding: 1rem;
+  max-width: 1920px;
+  width: 100%;
+  &__content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    justify-content: center;
+    align-content: center;
+    @include breakpoint-down(medium) {
+      margin: 1rem;
+      padding: 0rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      height: 18rem;
     }
-    &__set1 {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    @include breakpoint-down(small) {
+      margin: 2rem;
+      display: block;
+      padding: auto;
+      margin-left: auto;
+      margin-right: auto;
+      height: 20rem;
+    }
+    .qr {
+      position: static;
+      margin: 0;
+      max-width: 20rem;
+      min-width: 20rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__set1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0rem;
+    @include breakpoint-up(medium) {
+      width: 100%;
+      height: 100%;
+    }
+    @include breakpoint-down(small) {
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      margin-top: 4rem;
+      @include breakpoint-down(small) {
         margin-top: 0rem;
-        @include breakpoint-up(medium) {
-            width: 100%;
-            height: 100%;
-        }
-        @include breakpoint-down(small) {
-            margin-right: auto;
-            margin-left: auto;
-            width: 100%;
-            height: 100%;
-        }
-        img {
-            margin-top: 4rem;
-            @include breakpoint-down(small) {
-                margin-top: 0rem;
-            }
-        }
-        .dim {
-            color: $color3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: auto;
-            padding-top: 0;
-            padding-left: 1rem;
-            margin-top: 1rem;
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            @include breakpoint-down(small) {
-                margin-right: auto;
-                margin-left: auto;
-                padding-top: 0rem;
-                font-size: 2rem;
-            }
-            button {
-                width: 4rem;
-                height: 1.5rem;
-                background-color: $color5;
-                color: $color3;
-            }
-        }
-        a {
-            text-decoration: none;
-            font-size: 1rem;
-            color: $color3;
-            margin-bottom: -1rem;
-        }
+      }
     }
+    .dim {
+      color: $color3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      padding-top: 0;
+      padding-left: 1rem;
+      margin-top: 1rem;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      @include breakpoint-down(small) {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 0rem;
+        font-size: 2rem;
+      }
+      button {
+        width: 4rem;
+        height: 1.5rem;
+        background-color: $color5;
+        color: $color3;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: $color3;
+      margin-bottom: -1rem;
+    }
+  }
 }
 
 footer {
-    width: auto;
-    @include breakpoint-down(small) {
-        width: 100vw;
+  width: auto;
+  @include breakpoint-down(small) {
+    width: 100vw;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: flex-start;
+  max-width: 1080px;
+  white-space: nowrap;
+  grid-gap: 2px;
+  justify-content: center;
+  @include breakpoint-up(medium) {
+    padding: 0rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include breakpoint-down(small) {
+    display: subgrid;
+    grid-row-gap: 0px;
+    grid-column-gap: 3px;
+  }
+  a {
+    color: black;
+    cursor: pointer;
+    text-align: right;
+    padding-left: 1rem;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 0em;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      color: $color2;
     }
-    display: flex;
-    flex-wrap: wrap;
+    &:hover {
+      &::before {
+        background-color: $color3;
+      }
+    }
+  }
+  k {
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 0;
+    color: $color1;
+    font-size: 0.7rem;
+    text-align: right;
+    &:hover {
+      color: gainsboro;
+    }
+  }
+  p {
+    font-size: $font-med;
+    padding: 0.3rem;
+  }
+  code {
+    color: $color1;
+    &:hover {
+      color: gainsboro;
+    }
+  }
+  .address {
+    padding-left: 5px;
+    padding-right: 20px;
     text-align: left;
-    align-items: flex-start;
-    max-width: 1080px;
-    white-space: nowrap;
-    grid-gap: 2px;
-    justify-content: center;
-    @include breakpoint-up(medium) {
-        padding: 0rem;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    @include breakpoint-down(small) {
-        display: subgrid;
-        grid-row-gap: 0px;
-        grid-column-gap: 3px;
-    }
-    a {
-        color: black;
-        cursor: pointer;
-        text-align: right;
-        padding-left: 1rem;
-        &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            height: 0em;
-            left: 0;
-            right: 0;
-            bottom: 0px;
-            color: $color2;
-        }
-        &:hover {
-            &::before {
-                background-color: $color3;
-            }
-        }
-    }
-    k {
-        font-family: 'Helvetica Neue', sans-serif;
-        padding: 0;
-        color: $color1;
-        font-size: 0.7rem;
-        text-align: right;
-        &:hover {
-            color: gainsboro;
-        }
-    }
-    p {
-        font-size: $font-med;
-        padding: 0.3rem;
-    }
-    code {
-        color: $color1;
-        &:hover {
-            color: gainsboro;
-        }
-    }
-    .address {
-        padding-left: 5px;
-        padding-right: 20px;
-        text-align: left;
-    }
-    .contact {
-        text-align: center;
-    }
-    .map {
-        margin: 0;
-        padding: 0;
-    }
+  }
+  .contact {
+    text-align: center;
+  }
+  .map {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .services {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 0.5fr 4fr 0.5fr;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 0.5fr 4fr 0.5fr;
+  max-width: 1080px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color3;
+  width: 100%;
+  .service_buttons {
+    &_1 {
+      position: relative;
+      justify-content: center;
+      margin-right: -1rem;
+      align-items: center;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-top: 0.2rem;
+      color: $color2;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 100%;
+      border: 0;
+      background-color: #eaf0ed77;
+      margin-left: 1.5rem;
+      &:hover {
+        background-color: rgba(149, 153, 134, 0.219);
+      }
+    }
+    &_2 {
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-top: 0.2rem;
+      top: 50%;
+      border: 0;
+      background-color: #eaf0ed77;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 100%;
+      margin-left: 0.5rem;
+      &:hover {
+        background-color: rgba(149, 153, 134, 0.24);
+      }
+    }
+  }
+  .service_right {
+    @include breakpoint-down(small) {
+      display: none;
+    }
+    position: static;
+    margin-left: 1rem;
+    padding-left: 0rem;
+    width: 0rem;
+    height: 15rem;
+  }
+  .service_left {
+    @include breakpoint-down(small) {
+      display: none;
+    }
+    width: 0rem;
+    margin-left: -1rem;
+    position: static;
+    padding-right: 0rem;
+    height: 15rem;
+  }
+  .service_mid {
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 0;
+    padding-right: 0;
+    overflow-x: scroll hidden;
     max-width: 1080px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
-    background-color: $color3;
-    width: 100%;
-    .service_buttons {
-        &_1 {
-            position: relative;
-            justify-content: center;
-            margin-right: -1rem;
-            align-items: center;
-            padding-left: 0rem;
-            padding-right: 0rem;
-            padding-top: 0.2rem;
-            color: $color2;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            display: block;
-            width: 3.5rem;
-            height: 3.5rem;
-            border-radius: 100%;
-            border: 0;
-            background-color: #eaf0ed77;
-            margin-left: 1.5rem;
-            &:hover {
-                background-color: rgba(149, 153, 134, 0.219);
-            }
-        }
-        &_2 {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            margin-left: 1rem;
-            padding-left: 0rem;
-            padding-right: 0rem;
-            padding-top: 0.2rem;
-            top: 50%;
-            border: 0;
-            background-color: #eaf0ed77;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            display: block;
-            width: 3.5rem;
-            height: 3.5rem;
-            border-radius: 100%;
-            margin-left: 0.5rem;
-            &:hover {
-                background-color: rgba(149, 153, 134, 0.24);
-            }
-        }
+    padding-bottom: 10px;
+    overflow-y: hidden;
+    white-space: nowrap;
+    grid-gap: 0px;
+    align-items: right;
+    transform-origin: right top;
+    align-items: center;
+    @include breakpoint-up(medium) {
+      display: grid;
+      padding-left: 1rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      max-width: 900px;
+      margin: 0;
+      align-items: right;
     }
-    .service_right {
-        @include breakpoint-down(small) {
-            display: none;
-        }
-        position: static;
+    @include breakpoint-down(medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      max-width: 530px;
+      margin: auto;
+      padding-right: 4rem;
+      margin: 0rem;
+      align-items: right;
+      justify-content: left;
+    }
+    @include breakpoint-down(small) {
+      width: 100vw;
+      align-items: center;
+      justify-content: left;
+    }
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      transform: rotate(-90deg) translateY(-100px);
+      transform-origin: right top;
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 1px;
+      border-radius: 20px;
+      background: $color4;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #b0b0b0;
+      background-clip: padding-box;
+      border: 0.05em solid #eeeeee;
+    }
+    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling: touch;
+    .service_card {
+      text-align: left;
+      display: grid;
+      justify-content: center;
+      display: block;
+      background: $color1;
+      cursor: pointer;
+      margin: 0rem;
+      padding: 0;
+      margin-right: 1rem;
+      height: 13rem;
+      min-width: 11rem;
+      border-radius: 5px;
+      &::before {
+        transform: scaleX(0);
+        border-radius: 10px;
+        transform-origin: bottom right;
+        content: ' ';
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        border-width: 1;
+        border: #ec0000;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $color1;
+        z-index: -1;
+        transition: transform 0.3s ease;
+      }
+      &:hover::before {
+        transform: scaleX(0.1);
+      }
+      @include breakpoint-down(small) {
         margin-left: 1rem;
-        padding-left:0rem;
-        width: 0rem;
-        height: 15rem;
-    }
-    .service_left {
-        @include breakpoint-down(small) {
-            display: none;
-        }
-        width: 0rem;
-        margin-left: -1rem;
+      }
+      &_top {
+        height: 3rem;
+        color: rgb(199, 191, 191);
+        box-sizing: border-box;
+        position: relative;
+        padding-left: 0.2rem;
+      }
+      &_mid {
+        height: 4rem;
+        color: rgb(0, 0, 0);
+        font-size: 0.9rem;
         position: static;
-        padding-right:0rem;
-        height: 15rem;
+        max-width: 10rem;
+        padding-left: 3rem;
+      }
+      &_bottom {
+        height: 5.2rem;
+        position: relative;
+        background-color: #b0b0b0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      p {
+        color: rgb(90, 88, 88);
+        margin-left: -4rem;
+        font-size: 0.7rem;
+      }
+      h3 {
+        position: static;
+        padding-left: 0.5rem;
+        font-size: 0.8rem;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        position: relative;
+        right: -30px;
+        max-height: 100px;
+      }
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(112, 112, 112, 0.12),
+          0 4px 8px rgba(107, 107, 107, 0.06);
+      }
     }
-    .service_mid {
-        margin-left: 0rem;
-        padding-left: 0rem;
-        margin-right: 0;
-        padding-right: 0;
-        overflow-x: scroll hidden;
-        max-width: 1080px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 10px;
-        overflow-y: hidden;
-        white-space: nowrap;
-        grid-gap: 0px;
-        align-items: right;
-        transform-origin: right top;
-        align-items: center;
-        @include breakpoint-up(medium) {
-            display: grid;
-            padding-left: 1rem;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            max-width: 900px;
-            margin: 0;
-            align-items: right;
-        }
-        @include breakpoint-down(medium) {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            max-width: 530px;
-            margin: auto;
-            padding-right: 4rem;
-            margin: 0rem;
-            align-items: right;
-            justify-content: left;
-        }
-        @include breakpoint-down(small) {
-            width: 100vw;
-            align-items: center;
-            justify-content: left;
-        }
-        -webkit-overflow-scrolling: touch;
-        &::-webkit-scrollbar {
-            transform: rotate(-90deg) translateY(-100px);
-            transform-origin: right top;
-            display: none;
-        }
-        &::-webkit-scrollbar-thumb {
-            width: 1px;
-            border-radius: 20px;
-            background: $color4;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: #b0b0b0;
-            background-clip: padding-box;
-            border: 0.05em solid #eeeeee;
-        }
-        -webkit-overflow-scrolling: auto;
-        -webkit-overflow-scrolling: touch;
-        .service_card {
-            text-align: left;
-            display: grid;
-            justify-content: center;
-            display: block;
-            background: $color1;
-            cursor: pointer;
-            margin: 0rem;
-            padding: 0;
-            margin-right: 1rem;
-            height: 13rem;
-            min-width: 11rem;
-            border-radius: 5px;
-            &::before {
-                transform: scaleX(0);
-                border-radius: 10px;
-                transform-origin: bottom right;
-                content: " ";
-                display: block;
-                color: #ffffff;
-                position: absolute;
-                border-width: 1;
-                border: #ec0000;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background: $color1;
-                z-index: -1;
-                transition: transform .3s ease;
-            }
-            &:hover::before {
-                transform: scaleX(0.1);
-            }
-            @include breakpoint-down(small) {
-                margin-left: 1rem;
-            }
-            &_top {
-                height: 3rem;
-                color: rgb(199, 191, 191);
-                box-sizing: border-box;
-                position: relative;
-                padding-left: 0.2rem;
-            }
-            &_mid {
-                height: 4rem;
-                color: rgb(0, 0, 0);
-                font-size: 0.9rem;
-                position: static;
-                max-width: 10rem;
-                padding-left: 3rem;
-            }
-            &_bottom {
-                height: 5.2rem;
-                position: relative;
-                background-color: #b0b0b0;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-            }
-            p {
-                color: rgb(90, 88, 88);
-                margin-left: -4rem;
-                font-size: 0.7rem;
-            }
-            h3 {
-                position: static;
-                padding-left: 0.5rem;
-                font-size: 0.8rem;
-                color: rgb(0, 0, 0);
-            }
-            img {
-                position: relative;
-                right: -30px;
-                max-height: 100px;
-            }
-            &:hover {
-                transform: scale(1.05);
-                box-shadow: 0 10px 20px rgba(112, 112, 112, 0.12), 0 4px 8px rgba(107, 107, 107, 0.06);
-            }
-        }
-    }
+  }
 }

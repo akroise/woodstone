@@ -8,129 +8,129 @@ $color6: hsl(245, 21%, 12%);
 //fonts
 $font-large: 1rem;
 $font-med: 0.9rem;
-$font-sm:0.8rem;
-@import "./header";
-@import "./feature";
-@import "./section";
-@import "./variables/main.scss";
-@import "./mixins/main.scss";
-@import "./grid";
-@import "./visibility";
-@import "./mobilenav"; // Visibility last for precedence
+$font-sm: 0.8rem;
+@import './header';
+@import './feature';
+@import './section';
+@import './variables/main.scss';
+@import './mixins/main.scss';
+@import './grid';
+@import './visibility';
+@import './mobilenav'; // Visibility last for precedence
 //using material-UI
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
-    box-sizing: border-box;
-    //position: relative;
-    //outline: 1px solid red;
+  box-sizing: border-box;
+  //position: relative;
+  //outline: 1px solid red;
 }
 
 html {
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: auto;
-    &::-webkit-scrollbar {
-        display: block;
-        height: 2px;
-        width: 10px;
-        color: $color1;
-        background-color: $color1;
-        @include breakpoint-down(small) {
-            display: none;
-        }
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: auto;
+  &::-webkit-scrollbar {
+    display: block;
+    height: 2px;
+    width: 10px;
+    color: $color1;
+    background-color: $color1;
+    @include breakpoint-down(small) {
+      display: none;
     }
-    &::-webkit-scrollbar-thumb {
-        width: 2rem;
-        max-height: 1rem;
-        background: $color5;
-        border-radius: 2px;
-    }
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 2rem;
+    max-height: 1rem;
+    background: $color5;
+    border-radius: 2px;
+  }
 }
 
 body {
-    background-color: $color6;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    display: grid;
-    font-family: 'Poppins', sans-serif;
+  background-color: $color6;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  display: grid;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
-    color: $color1;
-    display: flex;
-    margin: 0px;
-    justify-content: center;
+  color: $color1;
+  display: flex;
+  margin: 0px;
+  justify-content: center;
 }
 
 i {
-    color: $color2;
-    text-align: center;
-    height: 100%;
+  color: $color2;
+  text-align: center;
+  height: 100%;
 }
 
 span {
-    background: $color1 !important;
-    color: $color2;
+  background: $color1 !important;
+  color: $color2;
 }
 
 //flexbox
 .flex {
-    display: flex;
-    &-jc-sb {
-        justify-content: space-between;
-    }
-    &-jc-c {
-        justify-content: center;
-    }
-    &-ai-c {
-        align-items: center;
-    }
+  display: flex;
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
 }
 
 button,
 .button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 //visibility
 .hide-for-mobile {
-    @include breakpoint-down(medium) {
-        display: none;
-    }
+  @include breakpoint-down(medium) {
+    display: none;
+  }
 }
 
 .hide-for-desktop {
-    @include breakpoint-up(medium) {
-        display: none;
-    }
+  @include breakpoint-up(medium) {
+    display: none;
+  }
 }
 
 //text
 .banner {
-    font-family: 'Shadows Into Light', cursive;
-    text-align: bottom;
-    padding-top: 0em;
-    justify-content: center;
-    width: 100%;
-    max-width: 40rem;
-    @include breakpoint-down(medium) {
-        padding-top: -20px;
-        width: 80%;
-        margin: auto;
-    }
-    @include breakpoint-down(small) {
-        padding-top: 20px;
-        width: 80%;
-        margin: 0;
-    }
-    @include breakpoint-up(medium) {
-        text-align: top;
-        margin-top: 100px;
-    }
+  font-family: 'Shadows Into Light', cursive;
+  text-align: bottom;
+  padding-top: 0em;
+  justify-content: center;
+  width: 100%;
+  max-width: 40rem;
+  @include breakpoint-down(medium) {
+    padding-top: -20px;
+    width: 80%;
+    margin: auto;
+  }
+  @include breakpoint-down(small) {
+    padding-top: 20px;
+    width: 80%;
+    margin: 0;
+  }
+  @include breakpoint-up(medium) {
+    text-align: top;
+    margin-top: 100px;
+  }
 }
 
 code {
-    font-family: 'Square721 BT';
-    font-size: 13px;
-    color: black;
+  font-family: 'Square721 BT';
+  font-size: 13px;
+  color: black;
 }

@@ -1,101 +1,101 @@
 .header {
+  color: black;
+  margin: 0;
+  padding: 0;
+  padding: 0px;
+  background-color: $color3;
+  nav {
     color: black;
-    margin: 0;
-    padding: 0;
-    padding: 0px;
-    background-color: $color3;
-    nav {
-        color: black;
-        top: 0;
-        width: 100%;
-        max-width: 1080px;
-        margin: auto;
+    top: 0;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+  }
+  &__logo {
+    //logo
+    margin-left: 0.54em;
+    margin-top: 0.24em;
+  }
+  &__menu {
+    //mobile MENU
+    span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $color1;
     }
-    &__logo {
-        //logo
-        margin-left: 0.54em;
-        margin-top: 0.24em;
-    }
-    &__menu {
-        //mobile MENU
-        span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background-color: $color1;
-        }
-    }
-    &__links {
-        padding-top: 1.42em;
-        padding-right: 0em;
+  }
+  &__links {
+    padding-top: 1.42em;
+    padding-right: 0em;
+    color: $color2;
+    margin-right: 2em;
+    a {
+      position: relative;
+      text-decoration: none;
+      font-size: $font-med + 0.2rem;
+      color: $color2;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 0.15em;
+        left: 0;
+        right: 0;
+        bottom: -5px;
         color: $color2;
-        margin-right: 2em;
-        a {
-            position: relative;
-            text-decoration: none;
-            font-size: $font-med +0.2rem;
-            color: $color2;
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                height: 0.15em;
-                left: 0;
-                right: 0;
-                bottom: -5px;
-                color: $color2;
-            }
-            &:hover {
-                color: rgb(0, 0, 0);
-            }
-        }
-        a {
-            position: relative;
-            font-size: $font-med +0.2rem;
-            color: $color2;
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                height: 3px;
-                left: 0;
-                right: 0;
-                bottom: -10px;
-                color: $color2;
-            }
-            &:hover {
-                color: rgb(0, 0, 0);
-                &::before {
-                    background: $color2;
-                }
-            }
-        }
+      }
+      &:hover {
+        color: rgb(0, 0, 0);
+      }
     }
-    &__cta {
-        font-size: $font-med;
+    a {
+      position: relative;
+      font-size: $font-med + 0.2rem;
+      color: $color2;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
         color: $color2;
+      }
+      &:hover {
+        color: rgb(0, 0, 0);
+        &::before {
+          background: $color2;
+        }
+      }
     }
+  }
+  &__cta {
+    font-size: $font-med;
+    color: $color2;
+  }
 }
 
 .circleBehind a:before,
 .circleBehind a:after {
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border: 4px solid #0277bd;
-    transform: translateX(-50%) translateY(-50%) scale(0.8);
-    border-radius: 50%;
-    background: transparent;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-    z-index: -1;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #0277bd;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  border-radius: 50%;
+  background: transparent;
+  content: '';
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
 }
