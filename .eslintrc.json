@@ -2,7 +2,7 @@
     "env": {
         "browser": true,
         "es2021": true,
-       "jest": true,
+        "jest": true,
         "es6": true,
         "node": true
     },
@@ -11,7 +11,8 @@
     ],
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "experimentalObjectRestSpread": true
         },
         "ecmaVersion": 12,
         "sourceType": "module"
@@ -20,6 +21,8 @@
         "react"
     ],
     "rules": {
+        "semi": ["error", "always"],
+        "eqeqeq": "off",
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
         "react/react-in-jsx-scope": "off",
