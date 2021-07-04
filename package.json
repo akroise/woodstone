@@ -10,7 +10,7 @@
         "watch": "parcel watch src/*.html",
         "lint": "npx eslint \"src/**/*.+(js)\" ",
         "lint:fix": "npx eslint \"src/**/*.+(js)\" --fix",
-        "format": "npx prettier --write \"src/**/*.+(js)\" \"src/**/*.+(scss)\""
+        "format": "npx prettier --write \"src/**/*.+(js)\" \"src/**/*.+(scss)\" \"src/*.+(html)\""
     },
     "repository": {
         "type": "git",

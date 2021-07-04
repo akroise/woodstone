@@ -1,0 +1,137 @@
+$switch-speed: 1s;
+$slider-number: 5;
+$slider-width: 100% / $slider-number;
+$image1: 'https://lh3.googleusercontent.com/pw/AM-JKLW_8eEAftcCRoTx9qUIP4_lGJmC3n1YvG7Zs5Nu0ygMiIz-hqsTFwhBiAnQYeW_Eg7bPjuG8GVpi9XGYq7wGsum3EvxvPyXdEna5ObB277_G8jxlP3_ZpOU_x0K012Ah5qkP0BtDyfmaV6Cb4N9Dc2C=w750-h305-no?authuser=1';
+$image2: 'https://lh3.googleusercontent.com/pw/AM-JKLVCdf1IKpqv2W2iv4VJN5U77fVQKqQcaZdU5jbcWgTKB_8mBkdLfBNkn2mLnbYL24pf8gYEO91cWqZrXglWa-cYoke-8C4goq1_uIQogc1uvtgDcsGFWBHGdR1E_ijyQkEPu68y_AzVJFZ-0TG-Kt7-=w666-h444-no?authuser=1';
+$image3: 'https://lh3.googleusercontent.com/pw/AM-JKLW_8eEAftcCRoTx9qUIP4_lGJmC3n1YvG7Zs5Nu0ygMiIz-hqsTFwhBiAnQYeW_Eg7bPjuG8GVpi9XGYq7wGsum3EvxvPyXdEna5ObB277_G8jxlP3_ZpOU_x0K012Ah5qkP0BtDyfmaV6Cb4N9Dc2C=w750-h305-no?authuser=1';
+$image4: 'https://lh3.googleusercontent.com/pw/AM-JKLVCdf1IKpqv2W2iv4VJN5U77fVQKqQcaZdU5jbcWgTKB_8mBkdLfBNkn2mLnbYL24pf8gYEO91cWqZrXglWa-cYoke-8C4goq1_uIQogc1uvtgDcsGFWBHGdR1E_ijyQkEPu68y_AzVJFZ-0TG-Kt7-=w666-h444-no?authuser=1';
+$image5: 'https://lh3.googleusercontent.com/pw/AM-JKLW_8eEAftcCRoTx9qUIP4_lGJmC3n1YvG7Zs5Nu0ygMiIz-hqsTFwhBiAnQYeW_Eg7bPjuG8GVpi9XGYq7wGsum3EvxvPyXdEna5ObB277_G8jxlP3_ZpOU_x0K012Ah5qkP0BtDyfmaV6Cb4N9Dc2C=w750-h305-no?authuser=1';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.outer-wrapper {
+  width: 80%;
+  margin: 50px auto;
+}
+
+// basic styles
+.s-wrap {
+  width: 98%;
+  display: flex;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-bottom: 20rem;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #050504;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  > input {
+    display: none;
+  }
+  .s-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% * $slider-number;
+    height: 100%;
+    font-size: 0;
+    list-style: none;
+    transition: transform $switch-speed;
+  }
+  .s-item {
+    display: inline-block;
+    width: $slider-width;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s-item-1 {
+    background-image: url($image1);
+    background-position: center center;
+  }
+  .s-item-2 {
+    background-image: url($image2);
+    background-position: center center;
+  }
+  .s-item-3 {
+    background-image: url($image3);
+    background-position: center center;
+  }
+  .s-item-4 {
+    background-image: url($image4);
+    background-position: center center;
+  }
+  .s-item-5 {
+    background-image: url($image5);
+    background-position: center center;
+  }
+}
+
+.s-type-1 {
+  .s-control {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    transition-timing-function: ease-out;
+    > label[class^='s-c-'] {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: 1px solid #999;
+      background-color: #efefe8;
+      cursor: pointer;
+    }
+  }
+  @for $i from 1 through $slider-number {
+    #s-#{$i}:checked {
+      & ~ .s-content {
+        transform: translateX(-$slider-width * ($i - 1));
+      }
+      & ~ .s-control .s-c-#{$i} {
+        background-color: #333;
+      }
+      & ~ .s-nav .s-nav-#{$i} {
+        display: block;
+      }
+    }
+  }
+}
+
+.s-type-1 {
+  .s-content {
+    animation: slider-animation 20s ease-in-out infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes slider-animation {
+  $i: 0;
+  $j: 0;
+  $times: ($slider-number - 1) * 2;
+  @while $i < 100 {
+    #{$i}%,
+    #{$i + 7}% {
+      @if $i < 50 {
+        transform: translateX(-$slider-width * $j);
+      } @else {
+        transform: translateX(-$slider-width * ($times - $j));
+      }
+    }
+    $i: $i + 100 / $times;
+    $j: $j + 1;
+  }
+}

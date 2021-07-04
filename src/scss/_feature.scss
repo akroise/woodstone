@@ -97,13 +97,109 @@ $breakpoints-down: (
     margin: 0.2rem;
     padding: 0;
     &:hover .card__visual {
-      background: url('../assests/home1.jpeg') no-repeat;
+      background: url('../assests/catalog1.gif') no-repeat;
       @include bgConfig;
       transform: scale(0.9);
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      height: 14rem;
+      height: 12rem;
     }
     &__visual {
+      background: url('../assests/home2.jpeg') no-repeat;
+      height: 17rem;
+      width: 100%;
+      @include bgConfig;
+      position: relative;
+      transition: all 0.7s ease;
+    }
+    &:hover .card__catalog1 {
+      background: url('../assests/catalog1.gif') no-repeat;
+      @include bgConfig;
+      transform: scale(0.9);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      height: 12rem;
+    }
+    //first property
+    &__catalog1 {
+      background: url('../assests/home2.jpeg') no-repeat;
+      height: 17rem;
+      width: 100%;
+      @include bgConfig;
+      position: relative;
+      transition: all 0.7s ease;
+    }
+    &:hover .card__catalog2 {
+      background: url('../assests/catalog1.gif') no-repeat;
+      @include bgConfig;
+      transform: scale(0.9);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      height: 12rem;
+    }
+    //second property
+    &__catalog2 {
+      background: url('../assests/home2.jpeg') no-repeat;
+      height: 17rem;
+      width: 100%;
+      @include bgConfig;
+      position: relative;
+      transition: all 0.7s ease;
+    }
+    &:hover .card__catalog3 {
+      background: url('../assests/catalog1.gif') no-repeat;
+      @include bgConfig;
+      transform: scale(0.9);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      height: 12rem;
+    }
+    //third property
+    &__catalog3 {
+      background: url('../assests/home2.jpeg') no-repeat;
+      height: 17rem;
+      width: 100%;
+      @include bgConfig;
+      position: relative;
+      transition: all 0.7s ease;
+    }
+    &:hover .card__catalog4 {
+      background: url('../assests/catalog1.gif') no-repeat;
+      @include bgConfig;
+      transform: scale(0.9);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      height: 12rem;
+    }
+    //fourth property
+    &__catalog4 {
+      background: url('../assests/home2.jpeg') no-repeat;
+      height: 17rem;
+      width: 100%;
+      @include bgConfig;
+      position: relative;
+      transition: all 0.7s ease;
+    }
+    &:hover .card__catalog5 {
+      background: url('../assests/catalog1.gif') no-repeat;
+      @include bgConfig;
+      transform: scale(0.9);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      height: 12rem;
+    }
+    //fifth property
+    &__catalog5 {
+      background: url('../assests/home2.jpeg') no-repeat;
+      height: 17rem;
+      width: 100%;
+      @include bgConfig;
+      position: relative;
+      transition: all 0.7s ease;
+    }
+    &:hover .card__catalog6 {
+      background: url('../assests/catalog1.gif') no-repeat;
+      @include bgConfig;
+      transform: scale(0.9);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      height: 12rem;
+    }
+    //sixth property
+    &__catalog6 {
       background: url('../assests/home2.jpeg') no-repeat;
       height: 17rem;
       width: 100%;
@@ -114,8 +210,9 @@ $breakpoints-down: (
     &__texts {
       padding-top: -1rem;
       cursor: default;
-      padding: 0.1rem;
+      padding: 0rem;
       width: 100%;
+
       .title {
         margin: -0.1rem;
         padding-left: 1rem;
@@ -128,15 +225,37 @@ $breakpoints-down: (
         text-align: right;
         padding-left: 7.1rem;
         font-size: 0.71rem;
+        color: #202020;
+      }
+      .price {
+        margin-top: 1.2rem;
+        font-size: 1.1rem;
+        margin-right: 90px;
+        img {
+          height: 20px;
+          margin-top: 3px;
+          margin-right: -3px;
+        }
+        color: #3e3f41;
+        color: black;
+      }
+      .address {
+        text-align: left;
+        font-size: 0.8rem;
+        margin-right: 15px;
+        color: #747d8c;
+      }
+      .rooms {
+        text-align: right;
+        margin-right: 40px;
+        font-size: 0.71rem;
         color: #747d8c;
       }
       .read {
-        display: grid;
-        margin: 1.8rem;
+        display: flex;
         text-align: right;
-        padding: 0.8rem;
-        padding-left: 6rem;
         font-size: 0.71rem;
+        margin-left: 16px;
         color: #747d8c;
       }
     }

@@ -16,6 +16,7 @@ $font-sm: 0.8rem;
 @import './mixins/main.scss';
 @import './grid';
 @import './visibility';
+@import './banner';
 @import './mobilenav'; // Visibility last for precedence
 //using material-UI
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -125,7 +126,7 @@ button,
   }
   @include breakpoint-up(medium) {
     text-align: top;
-    margin-top: 100px;
+    margin-top: 1px;
   }
 }
 
